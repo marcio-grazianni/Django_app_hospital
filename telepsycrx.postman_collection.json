@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "2b6354e9-254f-44e9-85e8-99a0c3f8acfd",
+		"name": "telepsycrx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16726359"
+	},
+	"item": [
+		{
+			"name": "prescription",
+			"item": [
+				{
+					"name": "get all prescritions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}accounts/prescription/",
+							"host": [
+								"{{URL}}accounts"
+							],
+							"path": [
+								"prescription",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create prescription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patient_first_name",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "patient_last_name",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "patient_address1",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "patient_address2",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "patient_city",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "patient_state",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "patient_zip",
+									"value": "2332",
+									"type": "text"
+								},
+								{
+									"key": "patient_phone_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "patient_fax_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "patient_ssn",
+									"value": "23223132",
+									"type": "text"
+								},
+								{
+									"key": "medication",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "dispensing_allowed",
+									"value": "233232",
+									"type": "text"
+								},
+								{
+									"key": "substitute_allowed",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10 mg",
+									"type": "text"
+								},
+								{
+									"key": "dosage_directions",
+									"value": "1 every night",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_state_license_number",
+									"value": "3232233232",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_address1",
+									"value": "adksjbkasjdksjb",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_address2",
+									"value": "dsakjbdsakjb",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_city",
+									"value": "adkjbsk",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_state",
+									"value": "kjabdsjka",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_zip",
+									"value": "28732",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_phone_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_fax_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "doctor",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patient",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "blocked",
+									"value": "True",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}accounts/prescription/",
+							"host": [
+								"{{URL}}accounts"
+							],
+							"path": [
+								"prescription",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete prescription",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patient_first_name",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "patient_last_name",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "patient_address1",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "patient_address2",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "patient_city",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "patient_state",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "patient_zip",
+									"value": "2332",
+									"type": "text"
+								},
+								{
+									"key": "patient_phone_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "patient_fax_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "patient_ssn",
+									"value": "23223132",
+									"type": "text"
+								},
+								{
+									"key": "medication",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "dispensing_allowed",
+									"value": "233232",
+									"type": "text"
+								},
+								{
+									"key": "substitute_allowed",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10 mg",
+									"type": "text"
+								},
+								{
+									"key": "dosage_directions",
+									"value": "1 every night",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_state_license_number",
+									"value": "3232233232",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_address1",
+									"value": "adksjbkasjdksjb",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_address2",
+									"value": "dsakjbdsakjb",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_city",
+									"value": "adkjbsk",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_state",
+									"value": "kjabdsjka",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_zip",
+									"value": "28732",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_phone_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "prescriber_fax_number",
+									"value": "+19732212870",
+									"type": "text"
+								},
+								{
+									"key": "doctor",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patient",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}accounts/prescription/2/",
+							"host": [
+								"{{URL}}accounts"
+							],
+							"path": [
+								"prescription",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "prescription status",
+			"item": [
+				{
+					"name": "get all prescription blocked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}accounts/prescription-status/",
+							"host": [
+								"{{URL}}accounts"
+							],
+							"path": [
+								"prescription-status",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update prescription status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}accounts/prescription-status/3/",
+							"host": [
+								"{{URL}}accounts"
+							],
+							"path": [
+								"prescription-status",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "shehrozkapoor@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Awaazar1603`",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}token/",
+					"host": [
+						"{{URL}}token"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.request.headers.add({key: 'Authorization', value: 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU2NzYzLCJpYXQiOjE2NjE0NTYxNjMsImp0aSI6ImMzYjI0YTMzNmZmNDQwYjBhZTBhY2QyMTJlMGM3MTM1IiwidXNlcl9pZCI6MX0.gMoKbCTtqvX8fJQIW4Y37vmspvST7SYaCJIzbJuls14'});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://127.0.0.1:8000/api/",
+			"type": "string"
+		}
+	]
+}
